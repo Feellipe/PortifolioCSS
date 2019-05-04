@@ -1,0 +1,41 @@
+.grid{
+    display: grid;
+    grid-column-gap: $grid-gap;
+
+    max-width: $grid-width;
+    margin: 0 auto;  
+}
+
+
+.about{
+    grid-template-columns: repeat(2, minmax(200px, 1fr) );
+    
+    &--text-content{
+        grid-column: 1/2;
+    }
+
+    &--image-composition{
+        grid-column: 2/3;
+    }
+}
+
+.features{
+    grid-template-columns: repeat(4, minmax(200px, 1fr) );
+
+    &--colum1{
+        grid-column: 1/2;   
+    }
+
+    &--colum2{
+        grid-column: 2/3;   
+    }
+    &--colum3{
+        grid-column: 3/4;   
+    }
+    &--colum4{
+        grid-column: 4/5;   
+    }
+
+}
+
+
