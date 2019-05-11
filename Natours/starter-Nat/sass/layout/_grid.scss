@@ -60,4 +60,16 @@
     }
 }
 
+.grid--footer{
+    grid-template-columns: repeat(2, $grid-minmax );
+    
+    &--text-content{
+        grid-column: 1/2;
+    }
+
+    &--image-composition{
+        grid-column: 2/3;
+    }
+}
+
 
