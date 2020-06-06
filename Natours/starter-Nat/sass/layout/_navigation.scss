@@ -18,6 +18,16 @@
         top: 6rem;
         right: 6rem;
 
+        @include respond(tab-port){
+            top: 4rem;
+            right: 4rem;
+        }
+
+        @include respond(phone){
+            top: 3rem;
+            right: 3rem;
+        }
+
     }
 
     &__background{
@@ -32,6 +42,17 @@
         right:  6.5rem;
         
         transition: transform .7s ease-in-out;
+
+        @include respond(tab-port){
+            top: 4.5rem;
+            right: 4.5rem;
+
+        }
+        @include respond(phone){
+            top: 3.5rem;
+            right: 3.5rem;
+
+        }
 
     }
 

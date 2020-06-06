@@ -171,6 +171,10 @@ body{
     z-index: -1;
     transition: all .4s;
 }
+.btn--animated{
+    animation: moveInBottom 1s ease-out;
+    animation-fill-mode: backwards;
+}
 
 .btn:hover::after{
     transform: scaleX(1.4) scaleY(1.6);
@@ -184,9 +188,4 @@ body{
 
 .btn--white::after{
     background-color: #fff;
-}
-
-.btn--animated{
-    animation: moveInBottom 1s ease-out;
-    animation-fill-mode: backwards;
 }
