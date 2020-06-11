@@ -32,6 +32,10 @@
     &__left{
         width: 33.3333%;
         display: table-cell;
+        
+        @include respond(tab-land){
+            display: none       
+        }
     }
 
     &__right{
@@ -56,6 +60,11 @@
         column-rule: 1px solid $color-grey-light-1;
 
         hyphens: auto;
+
+        @include respond(tab-land){
+            column-count: 1;
+                
+        }
     }
 
     &:target &__content{

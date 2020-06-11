@@ -8,6 +8,12 @@
     padding: 6rem;
     transform: skewX(-12deg);
     width: 70%;
+
+    @include respond(phone){
+        padding-left: 4rem;
+        transform: skewX(0);
+
+    }
     
     //Selecionando todos os filhos
     & > * {
@@ -23,6 +29,12 @@
         shape-outside: circle(50% at 50% 50%);
         transform: translateX(-3rem) skewX(12deg);
         width: 15rem;
+
+        @include respond(phone){
+            height: 11rem;
+            width: 11rem;
+            transform: translateX(-3rem) skewX(0);
+        }
     }
 
     &__img{
@@ -36,6 +48,10 @@
 
     &__text{
         transform: skewX(12rem);
+
+        @include respond(phone){
+            transform: skewX(0);
+        }
     }
 
     &__caption {

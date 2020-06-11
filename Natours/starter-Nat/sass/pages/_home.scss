@@ -4,8 +4,13 @@
     padding: 25rem 0;
 
     @include respond(tab-port){
-        padding: 20rem 0;
+        padding: 20rem 0 ;
     }
+
+    @include respond(tab-land){
+        padding: 20rem 0 45rem;
+    }
+
 }
 
 .section-features{
@@ -51,6 +56,12 @@
 .section-book{
     padding: 15rem 0;
     background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+
+    .grid{
+        @include respond(tab-port){
+            max-width: 75rem;
+        }
+    }
 }
 
 .book{
@@ -64,10 +75,39 @@
     border-radius: $border-radius-small;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.35);
 
-    height: 50rem;
+
+    @include respond(tab-land){
+        background-image: linear-gradient(
+        105deg,
+        rgba($color-white, .9) 0%,
+        rgba($color-white, .9) 65%,
+        transparent),
+         url(../../img/nat-10.jpg);
+         background-size: cover
+    }
+
+    @include respond(phone){
+        background-image: linear-gradient(
+        105deg,
+        rgba($color-white, .9) 0%,
+        rgba($color-white, .9) 75%,
+        transparent),
+         url(../../img/nat-10.jpg);
+         background-size: cover
+    }
 
     &__form{
         width: 50%;
         padding: 6rem;
+
+        @include respond(tab-land){
+            width: 80%;
+            padding-right: 0
+        }
+
+        @include respond(phone){
+            width: 90%;
+            padding-right: 0
+        }
     }
 }

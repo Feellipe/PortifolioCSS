@@ -14,8 +14,8 @@
     }
 
     @include respond(phone) { 
-        max-width: 75vw;
-        padding: 1.2rem;
+        max-width: 75vw !important;
+        padding: 1.2rem !important;
     }
 }
 
